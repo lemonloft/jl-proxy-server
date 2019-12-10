@@ -1,0 +1,27 @@
+{
+  "name": "jl-proxy-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "server": "nodemon ./server/router.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyungjinlee93/jl-proxy-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyungjinlee93/jl-proxy-server/issues"
+  },
+  "homepage": "https://github.com/hyungjinlee93/jl-proxy-server#readme"
+}
