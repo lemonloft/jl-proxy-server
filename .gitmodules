@@ -4,9 +4,6 @@
 [submodule "suggestions-module"]
 	path = suggestions-module
 	url = https://github.com/lemonloft/suggestions-module.git
-[submodule "reservation-module"]
-	path = reservation-module
-	url = https://github.com/lemonloft/reservation-module.git
 [submodule "photo-gallery-module-gs"]
 	path = photo-gallery-module-gs
 	url = https://github.com/lemonloft/photo-gallery-module-gs.git
