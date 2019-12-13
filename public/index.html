@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <head>
-
+  <style>
+    .gridwrapper {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      grid-gap: 10px;
+    }
+    #ReservationModule {
+      grid-column: 2;
+    }
+  </style>
 </head>
 <body style="position: relative">
   <div id="PhotoGalleryModule"></div>
-  <div id="ReservationModule" style="position:sticky; top: 0; right: 0;"></div>
+  <div class="gridwrapper">
+    <div id="ReservationModule" style="position:sticky; top: 0; left: 0;"></div>
+  </div>
   <div id="ReviewsModule"></div>
   <div id="SuggestionsModule"></div>
 </div>
 <script type = 'text/javascript' src="https://lemonloftreservation.s3-us-west-1.amazonaws.com/bundle.js"></script>
+<script type = 'text/javascript' src="https://pplemonloft.s3-us-west-1.amazonaws.com/index.js"></script>
 <script src="http://localhost:3002/bundle.js"></script>
 <script src="http://localhost:3003/bundle.js"></script>
-<script src="http://localhost:3004/index.js"></script>
