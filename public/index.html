@@ -2,24 +2,58 @@
 <head>
   <style>
     .gridwrapper {
+      padding: 0px;
+      padding-top: 10px;
+      margin: 0px;
+      width: 100%;
+      position: relative;
       display: grid;
-      grid-template-columns: 60% 40%;
+      grid-template-columns: 57% 43%;
+      grid-template-rows: min-content min-content min-content min-content min-content;
+      grid-template-areas:
+        "f f"
+        "a a"
+        "b c"
+        "d c"
+        "e e";
       grid-gap: 10px;
     }
+    #TopBar {
+      grid-area: f;
+      width: 99%;
+      padding-right: 6px;
+    }
+    #gallery {
+      border: 1px solid black;
+      grid-area: a;
+    }
     #ReservationModule {
-      grid-column: 2;
+      grid-area: c;
+    }
+    #DescriptionModule{
+      grid-area: b;
+    }
+    #ReviewsModule {
+      grid-area: d;
+    }
+    #SuggestionsModule{
+      grid-area: e;
     }
   </style>
 </head>
-<body style="position: relative">
-  <div id="PhotoGalleryModule"></div>
-  <div class="gridwrapper">
-    <div id="ReservationModule" style="position:sticky; top: 0; left: 0;"></div>
+<body class="gridwrapper">
+  <div id="titlecontainer"></div>
+  <img id="TopBar" src="https://lemonloftreservation.s3-us-west-1.amazonaws.com/topbar.png">
+  <div id="gallery"></div>
+  <div id="ReservationModule"></div>
+  <div id="DescriptionModule">
+    <!-- <img id="DescriptionImage" src='https://lemonloftreservation.s3-us-west-1.amazonaws.com/bodytext.png'> -->
   </div>
   <div id="ReviewsModule"></div>
   <div id="SuggestionsModule"></div>
 </div>
 <script type = 'text/javascript' src="https://lemonloftreservation.s3-us-west-1.amazonaws.com/bundle.js"></script>
 <script type = 'text/javascript' src="https://pplemonloft.s3-us-west-1.amazonaws.com/index.js"></script>
+<script type = 'text/javascript' src="https://lemonloftreservation.s3-us-west-1.amazonaws.com/descriptionbundle.js"></script>
 <script src="http://localhost:3002/bundle.js"></script>
-<script src="http://localhost:3003/bundle.js"></script>
+<script type = 'text/javascript' src="https://airbnbphotogallery.s3-us-west-1.amazonaws.com/bundleAWS.js"></script>

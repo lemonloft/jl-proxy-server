@@ -4,7 +4,9 @@ const path = require('path');
 const cors = require('cors');
 const app = express();
 const port = 3000;
+const compression = require('compression');
 
+app.use(compression());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
