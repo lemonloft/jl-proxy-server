@@ -1,14 +1,14 @@
 <!DOCTYPE html>
+
 <head>
   <style>
     .gridwrapper {
       padding: 0px;
       padding-top: 10px;
       margin: 0px;
-      width: 100%;
       position: relative;
       display: grid;
-      grid-template-columns: 58% 42%;
+      grid-template-columns: auto auto;
       grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
       grid-template-areas:
         "f f"
@@ -20,43 +20,62 @@
         "h h";
       grid-gap: 10px;
     }
+
     #TopBar {
       grid-area: f;
-      width: 99%;
       padding-right: 6px;
     }
-    #gallery {
+    #TopBarImage {
+      width: 100vw;
+    }
+    #GalleryModule {
+      width: 100vw;
       z-index: 255;
       border: 1px solid black;
       grid-area: a;
     }
+
     #ReservationModule {
       grid-area: c;
     }
-    #DescriptionModule{
+
+    #DescriptionModule {
       grid-area: b;
     }
+
     #ReviewsModule {
       grid-area: d;
     }
-    #SuggestionsModule{
+
+    #SuggestionsModule {
       grid-area: e;
     }
+
     #Amenities {
       text-align: right;
       grid-area: g;
     }
+
     #BottomInfo {
-      width: 99%;
+      text-align: center;
       z-index: 255;
       grid-area: h;
     }
+
+    #BottomImage {
+      width: 100vw;
+    }
   </style>
 </head>
+
 <body class="gridwrapper">
   <div id="titlecontainer"></div>
-  <img id="TopBar" src="https://lemonloftreservation.s3-us-west-1.amazonaws.com/topbar.png">
-  <div id="gallery"></div>
+  <div id="TopBar">
+    <img id="TopBarImage" src="https://lemonloftreservation.s3-us-west-1.amazonaws.com/topbar.png">
+  </div>
+  <div id="GalleryModule">
+    <div id="gallery"></div>
+  </div>
   <div id="ReservationModule"></div>
   <div id="DescriptionModule"></div>
   <div id="Amenities">
@@ -64,10 +83,13 @@
   </div>
   <div id="ReviewsModule"></div>
   <div id="SuggestionsModule"></div>
-  <img id="BottomInfo" src="https://lemonloftreservation.s3-us-west-1.amazonaws.com/bottominfo.png">
-</div>
-<script type = 'text/javascript' src="https://lemonloftreservation.s3-us-west-1.amazonaws.com/bundle.js"></script>
-<script type = 'text/javascript' src="https://pplemonloft.s3-us-west-1.amazonaws.com/index.js"></script>
-<script type = 'text/javascript' src="https://lemonloftreservation.s3-us-west-1.amazonaws.com/descriptionbundle.js"></script>
-<script type = 'text/javascript' src="https://lemonloftsuggestions.s3-us-west-1.amazonaws.com/bundle.js"></script>
-<script type = 'text/javascript' src="https://airbnbphotogallery.s3-us-west-1.amazonaws.com/bundleAWS.js"></script>
+  <div id="BottomInfo">
+    <img id="BottomImage" src="https://lemonloftreservation.s3-us-west-1.amazonaws.com/bottominfo.png">
+  </div>
+  </div>
+  <script type='text/javascript' src="https://lemonloftreservation.s3-us-west-1.amazonaws.com/bundle.js"></script>
+  <script type='text/javascript' src="https://pplemonloft.s3-us-west-1.amazonaws.com/index.js"></script>
+  <script type='text/javascript'
+    src="https://lemonloftreservation.s3-us-west-1.amazonaws.com/descriptionbundle.js"></script>
+  <script type='text/javascript' src="https://lemonloftsuggestions.s3-us-west-1.amazonaws.com/bundle.js"></script>
+  <script type='text/javascript' src="https://airbnbphotogallery.s3-us-west-1.amazonaws.com/bundleAWS.js"></script>
