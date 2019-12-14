@@ -9,11 +9,12 @@
       position: relative;
       display: grid;
       grid-template-columns: 57% 43%;
-      grid-template-rows: min-content min-content min-content min-content min-content;
+      grid-template-rows: min-content min-content min-content min-content min-content min-content;
       grid-template-areas:
         "f f"
         "a a"
         "b c"
+        "g c"
         "d c"
         "e e";
       grid-gap: 10px;
@@ -39,6 +40,10 @@
     #SuggestionsModule{
       grid-area: e;
     }
+    #Amenities {
+      text-align: right;
+      grid-area: g;
+    }
   </style>
 </head>
 <body class="gridwrapper">
@@ -46,8 +51,9 @@
   <img id="TopBar" src="https://lemonloftreservation.s3-us-west-1.amazonaws.com/topbar.png">
   <div id="gallery"></div>
   <div id="ReservationModule"></div>
-  <div id="DescriptionModule">
-    <!-- <img id="DescriptionImage" src='https://lemonloftreservation.s3-us-west-1.amazonaws.com/bodytext.png'> -->
+  <div id="DescriptionModule"></div>
+  <div id="Amenities">
+    <img width=635px src="https://lemonloftreservation.s3-us-west-1.amazonaws.com/amenities.png"></div>
   </div>
   <div id="ReviewsModule"></div>
   <div id="SuggestionsModule"></div>
